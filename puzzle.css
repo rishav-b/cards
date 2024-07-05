@@ -1,0 +1,134 @@
+@font-face {
+    font-family: mySans;
+    src: url("SFPRODISPLAYREGULAR.otf");
+}
+
+@font-face {
+    font-family: myDisplay;
+    src: url("SFPRODISPLAYBOLD.otf");
+}
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: mySans;
+}
+.content {
+    margin-top: 5vh;
+    font-size: 20px;
+    
+}
+
+h1 {
+    font-family: myDisplay;
+    font-size: 100px;
+    color: black;
+}
+
+body {
+    font-family: mySans, sans-serif;
+    text-align: center;
+}
+
+#board {
+    width: 488px;
+    height: 490px;
+    border: 2px solid #031e70;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 79px;
+    height: 79px;
+    border: 0.5px solid #031e70;
+    border-radius: 0px;
+}
+
+#pieces {
+    width: 960px;
+    height: 480px;
+    border: 0px solid #031e70;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+#pieces img {
+    width: 79px;
+    height: 79px;
+    border: 0.5px solid #031e70;
+    border-radius: 0px;
+}
+
+
+  .wrapper {
+    display: grid;
+  }
+
+
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+button {
+    padding: 0.8em 0em;
+    width:350px;
+    background: #FF00AA;
+    border-radius:15px;
+    border:0;
+    color: #fff;
+    font-size:1.2em;
+    font-family: myDisplay;
+    font-weight:bold;
+    cursor:pointer;
+    margin:1em 2em;
+    text-transform:uppercase;
+}
+.light{
+background: -moz-linear-gradient(-45deg,  #FF00AA 0%, #FF00AA 40%, #FF90DA 50%, #FF00AA 60%, #FF00AA 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#FF00AA), color-stop(40%,#FF00AA), color-stop(50%,#FF90DA), color-stop(60%,#FF00AA), color-stop(100%,#FF00AA));
+background: -webkit-linear-gradient(-45deg,  #FF00AA 0%,#FF00AA 40%,#FF90DA 50%,#FF00AA 60%,#FF00AA 100%);
+background: -o-linear-gradient(-45deg,  #FF00AA 0%,#FF00AA 40%,#FF90DA 50%,#FF00AA 60%,#FF00AA 100%);
+background: -ms-linear-gradient(-45deg,  #FF00AA 0%,#FF00AA 40%,#FF90DA 50%,#FF00AA 60%,#FF00AA 100%);
+background: linear-gradient(135deg,  #FF00AA 0%,#FF00AA 40%,#FF90DA 50%,#FF00AA 60%,#FF00AA 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF00AA', endColorstr='#FF00AA',GradientType=1 );
+background-repeat: no-repeat;  
+background-position:0px;
+background-size:300%;  
+}
+
+.light:hover{
+animation:light 1s;
+-webkit-animation:light 1s;
+
+}
+
+@keyframes light {
+0% {
+    background-position:-600px; 
+}
+100% { 
+    background-position:0px; 
+}
+}
+    
+@-webkit-keyframes light {
+0% {
+    background-position:-600px; 
+}
+100% { 
+    background-position:0px; 
+}
+}
+
+.bounce:hover{
+animation:bounce 1s;
+-webkit-animation:bounce 1s;
+
+}

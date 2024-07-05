@@ -1,0 +1,90 @@
+@font-face {
+    font-family: myDisplay;
+    src: url("SFPRODISPLAYBOLD.otf");
+}
+
+
+h1 {
+    text-align: center;
+    font-family: myDisplay;
+    font-size: 100px;
+}
+.confetti-button{
+    background-color: black;
+    border: none;
+    border-radius: 18px;
+    color: white;
+    padding: 15px 32px;
+    font-family: myDisplay;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 80px;
+     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .confetti-button:hover {
+    background-color: #FF00AA;
+    box-shadow: 0 15px 25px rgba(255, 0, 170, .4);
+  }
+  
+  .header { 
+    width: 100%;
+    text-allign: Center;
+    position: fixed;
+    background-color: rgb(40,40,40);
+    color: white;
+  }
+  
+  a.button {
+    text-align: center;
+    margin: 20px;
+    font-size: 100px;
+    font-family: myDisplay;
+    text-decoration: none;
+    color: black;
+}
+
+a.card:hover {
+    color: #FF00AA;
+}
+a.card {
+    text-align: center;
+    margin: 20px;
+    font-size: 80px;
+    font-family: myDisplay;
+    text-decoration: none;
+    color: black;
+}
+.arrow {
+    color: black;
+    margin: 1em 0;
+
+    &::after {
+        display: inline-block;
+        padding-left: 8px;
+        content: "\0279E"; // arrow right unicode
+        -webkit-transition: transform 0.3s ease-out;
+        -moz-transition: transform 0.3s ease-out;
+        -ms-transition: transform 0.3s ease-out;
+        -o-transition: transform 0.3s ease-out;
+        transition: transform 0.3s ease-out;
+        
+    }
+
+    &:hover {
+        color: #FF00AA;
+
+        &::after {
+            -webkit-transform: translateX(10px);
+            -moz-transform: translateX(10px);
+            -ms-transform: translateX(10px);
+            -o-transform: translateX(10px);
+            transform: translateX(10px);
+        }
+    }
+}

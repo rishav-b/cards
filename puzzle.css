@@ -1,17 +1,17 @@
 @font-face {
-    font-family: mySans;
-    src: url("SFPRODISPLAYREGULAR.otf");
+    font-family: "mySans";
+    src: url("sf-pro-text-regular-webfont.woff2") format('woff2');
 }
 
 @font-face {
-    font-family: myDisplay;
-    src: url("SFPRODISPLAYBOLD.otf");
+    font-family: "myDisplay";
+    src: url("sf-pro-text-bold-webfont.woff") format('woff');
 }
 .wrapper {
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-    font-family: mySans;
+    font-family: "mySans";
 }
 .content {
     margin-top: 5vh;
@@ -20,13 +20,13 @@
 }
 
 h1 {
-    font-family: myDisplay;
+    font-family: "myDisplay";
     font-size: 100px;
     color: black;
 }
 
 body {
-    font-family: mySans, sans-serif;
+    font-family: "mySans", sans-serif;
     text-align: center;
 }
 
@@ -84,7 +84,7 @@ button {
     border:0;
     color: #fff;
     font-size:1.2em;
-    font-family: myDisplay;
+    font-family: "myDisplay";
     font-weight:bold;
     cursor:pointer;
     margin:1em 2em;

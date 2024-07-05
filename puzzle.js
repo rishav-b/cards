@@ -11,7 +11,7 @@ window.onload = function () {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             let tile = document.createElement('img');
-            tile.src = "./images/blank2.jpg";
+            tile.src = "blank2.jpg";
             
             tile.addEventListener('dragstart', dragStart); //click on image to drag
             tile.addEventListener('dragover', dragOver); //when you drag the image
@@ -39,7 +39,7 @@ window.onload = function () {
 
     for (let i = 0; i < pieces.length; i++) {
         let tile = document.createElement('img');
-        tile.src = './images/' + pieces[i] + '.jpg';
+        tile.src = pieces[i] + '.jpg';
 
         tile.addEventListener('dragstart', dragStart);
         tile.addEventListener('dragover', dragOver);
